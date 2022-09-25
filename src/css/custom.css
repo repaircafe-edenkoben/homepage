@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ifm-color-primary: #0084d3;
+  --ifm-color-primary-dark: #00195a;
+  --ifm-color-primary-darker: #003283;
+  --ifm-color-primary-darkest: #0f46a7;
+  --ifm-color-primary-light: #0076cb;
+  --ifm-color-primary-lighter: #008fd3;
+  --ifm-color-primary-lightest: #0faaff;
+  --ifm-code-font-size: 95%;
+}
+
+.footer--dark {
+  background-color: #222 !important;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: #4b4b4b;
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+h1 {
+  @apply text-4xl font-extrabold mt-8 text-left;
+}
+
+h2 {
+  @apply text-2xl font-bold text-left;
+}
+
+h3 {
+  @apply text-xl font-bold text-left;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  @apply text-lg font-bold text-left;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+a {
+  @apply text-primary-500;
+}
+
+.hero__title {
+  @apply pb-6;
+}
+
+aside > div > nav > ul > li > a {
+  @apply font-bold text-gray-900;
+}
+article img {
+  @apply mx-auto my-4;
+}
+
+article {
+  @apply text-justify text-gray-700;
+}
+
+article ul {
+  @apply list-disc ml-6 my-4;
+}
+article ol {
+  @apply list-decimal ml-6 my-4;
+}
+article ol li::marker {
+  @apply font-bold;
+}
+
+a,
+p,
+b,
+strong span,
+h1,
+h2,
+h3,
+h4 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+#__docusaurus
+  > div.main-wrapper.docs-wrapper.docs-doc-page
+  > div
+  > aside
+  > div
+  > nav
+  > ul
+  > li
+  > a {
+  @apply font-medium;
+}
+
+main {
+  min-height: calc(100vh - 320px);
+}
+nav.menu {
+  @apply pb-12 pt-4;
+}
+
+ol > li {
+  @apply mb-4;
+}
+
+ul.breadcrumbs {
+  display: none; /* TODO: Remove breadcrumbs from the docusaurus config */
+}
+
+hr {
+  @apply my-6 border-gray-200 border-dashed;
+}
+
+div.admonition {
+  @apply mt-12;
+}
+
+table {
+  @apply table-fixed w-full my-12;
+}
+
+td,
+th,
+thead,
+tbody {
+  width: 1%; /* Allows to use the fixed table layout */
+  @apply text-left;
+}
+
+blockquote::before {
+  content: '“';
+  @apply absolute text-primary-100 font-clean;
+  font-size: 120px;
+  left: 10px;
+}
+
+blockquote::after {
+  content: '„';
+  @apply absolute text-primary-100 font-clean;
+  font-size: 120px;
+  bottom: 90px;
+  right: 10px;
+}
+
+blockquote {
+  @apply text-lg my-16 border-none px-24 text-gray-400 relative;
+}
+
+blockquote p {
+  @apply pb-8 text-xl font-light tracking-widest;
+}
+
+blockquote em {
+  @apply text-sm font-bold text-primary-500 tracking-tight;
+}
+aside > div > nav > ul > li > a {
+  @apply font-normal;
+}
+
+aside > div > nav > ul::before {
+  content: 'Articles';
+  @apply mb-2 block !important;
+}
+
+ul.table-of-contents::before {
+  content: 'Table of contents';
+  @apply mb-2 ml-2 lg:block font-bold hidden !important;
+}
+
+li {
+  @apply text-left;
+}
+
+code {
+  white-space : pre-wrap !important;
+}
